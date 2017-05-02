@@ -1,4 +1,7 @@
- public void ejercicio1(int x) {
+ public class Par_Impar_Pos_Neg {
+    
+
+public void ejercicio1(int x) {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite el tamaño del vector: ");
@@ -16,26 +19,58 @@
             for (j = 0; j < a.length; j++) {
                 System.out.print(a[i][j]);
             }
-            System.out.println("");
+            
         }
+        System.out.println("");
+        System.out.println("Los pares son: ");
         for (i = 0; i < a.length; i++) {
             for (j = 0; j < a.length; j++) {
                 if (a[i][j] % 2 == 0) {
-                    System.out.println("Par: " + a[i][j]);
+                    System.out.println(a[i][j]);
 
-                } else {
-                    System.out.println("Impar: " + a[i][j]);
                 }
-                if (a[i][j] > 0) {
-                    System.out.println("Positivo: " + a[i][j]);
-                } else {
-                    System.out.println("Negativo: " + a[i][j]);
+            }    
+        }
+        System.out.println("Los impares son: ");
+         for (i = 0; i < a.length; i++) {
+            for (j = 0; j < a.length; j++) {
+        
+        
+            
+                if (a[i][j]%2!=0){
+                    System.out.println( a[i][j]);
                 }
-
+                    
             }
+               
+        }
+         System.out.println("Los numeros positivos son: ");
+          for (i = 0; i < a.length; i++) {
+            for (j = 0; j < a.length; j++) {
+        
+        
+            
+                if (a[i][j]>0){
+                    System.out.println( a[i][j]);
+                }
+                    
+            }
+               
+        }
+          System.out.println("Los numeros negativos son: ");
+          for (i = 0; i < a.length; i++) {
+            for (j = 0; j < a.length; j++) {
+        
+        
+            
+                if (a[i][j]<0){
+                    System.out.println( a[i][j]);
+                }
+                    
+            }
+               
+        }
 
         }
 
     }
-
-}
